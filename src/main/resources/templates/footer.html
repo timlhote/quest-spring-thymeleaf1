@@ -6,11 +6,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header th:replace="header :: top"></header>
-<section>
-    <h1 th:text="'Welcome ' + ${name}"></h1>
-    <h3 th:text="'Your number is ' + ${number}"></h3>
-</section>
-<footer th:replace="footer :: bottom"></footer>
+<header th:fragment="top">
+    <nav>
+        <h1>Welcome !</h1>
+        <span>Doctor Secret Service</span>
+        <a th:href="@{/}">Sign In</a>
+    </nav>
+</header>
+
 </body>
 </html>
+© 2019 GitHub, Inc.
